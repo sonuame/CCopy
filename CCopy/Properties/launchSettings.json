@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CCopy": {
+      "commandName": "Project",
+      "commandLineArgs": "-s \"D:\\GitClones\\Ocelot\\src\" -d \"D:\\GitClones\\Ocelot2\" -r -t *.cs"
+    }
+  }
+}
