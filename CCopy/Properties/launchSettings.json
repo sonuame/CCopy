@@ -2,7 +2,7 @@
   "profiles": {
     "CCopy": {
       "commandName": "Project",
-      "commandLineArgs": "-s \"D:\\GitClones\\Ocelot\\src\" -d \"D:\\GitClones\\Ocelot2\" -r -t *.cs"
+      "commandLineArgs": "-s D:\\GitClones\\TripSaathi-API-Repo\\APIServer-Core\\publish -d C:\\Apps\\sites\\ms-dev -r -t *.* -a -q"
     }
   }
 }
