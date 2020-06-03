@@ -80,8 +80,8 @@ namespace CCopy
 
         static void Copy(string from, string to, string rootDir = "", bool recursive = false, bool overwrite = true, params string[] types)
         {
-            var isdirFrom = from.GetDIRInfo().Attributes == FileAttributes.Directory;
-            var isdirTo = to.GetDIRInfo().Attributes == FileAttributes.Directory || to.GetDIRInfo().Attributes == (FileAttributes)(-1);
+            var isdirFrom = from.IsDir();
+            var isdirTo = to.IsDir();
 
             if (isdirFrom && isdirTo)
             {
@@ -143,6 +143,11 @@ namespace CCopy
         public static FileInfo GetFileInfo(this string @this)
         {
             return new FileInfo(@this);
+        }
+
+        public static bool IsDir(this string @this)
+        {
+            return Directory.Exists(@this) || !File.Exists(@this);
         }
     }
 }
