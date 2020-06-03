@@ -2,7 +2,7 @@
 minimal command line tool error free for Directory/File copy. Better for use in CI/CD pipelines
 
 ## Usage
-ccopy -s <source> -d <dest>
+ccopy -s `<source>` -d `<dest>`
 
 ## additional switches
 
